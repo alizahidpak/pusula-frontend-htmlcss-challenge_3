@@ -68,6 +68,11 @@ ul {
   align-items: center;
 }
 
+.menu-link a:link,
+.menu-link a:visited {
+  color: #777777;
+}
+
 section {
   width: 100%;
   scroll-margin: 75px;
@@ -86,24 +91,11 @@ header input[type='file'] {
   margin-left: 120px;
   font-size: 28px;
   gap: 50px;
-  color: #777777;
 }
 
-.menu li:first-child {
+.menu li:first-child a {
   font-weight: 500;
   color: black;
-}
-
-label:hover {
-  cursor: pointer;
-}
-
-footer a {
-  width: 100px;
-}
-
-.client img {
-  width: 50px;
 }
 
 .menu-btn {
@@ -342,4 +334,143 @@ footer a {
 
 .active-testimonial {
   background-color: #9540eb;
+}
+
+.section-blog .wrapper {
+  grid-template-columns: 2fr 4fr 3fr 3fr;
+  gap: 40px;
+}
+
+.section-blog img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.section-blog span {
+  display: inline-block;
+  font-size: 20px;
+  margin: 20px 0 10px 0;
+}
+
+.section-blog a {
+  display: block;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.latest-blog span {
+  color: #8948c5;
+}
+
+.latest-blog a:link,
+.latest-blog a:visited {
+  color: black;
+}
+
+.blog {
+  position: relative;
+  overflow: hidden;
+}
+
+.blog img {
+  height: 100%;
+}
+
+.blog div {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  color: white;
+  z-index: 1;
+}
+
+.blog a:link,
+.blog a:visited {
+  color: white;
+}
+
+.blog div::before {
+  content: '';
+  background: linear-gradient(to bottom, transparent 0%, #333 100%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.section-contact a {
+  margin-left: auto;
+  font-size: 32px;
+  text-decoration: underline;
+}
+
+.contact input {
+  border: 0;
+  padding: 30px 0;
+  border-bottom: 2px solid #bbb;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.contact input:focus {
+  outline: 0;
+}
+
+.contact input::placeholder {
+  color: #bbb;
+}
+
+input[type='submit'] {
+  border: 0;
+  width: 270px;
+  border-radius: 1000px;
+  background-color: #9040e4;
+  color: #ddd;
+  justify-self: start;
+  margin-right: auto;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.contact div {
+  align-items: center;
+}
+
+.file-upload {
+  font-size: 32px;
+  color: #777;
+}
+
+.contact a {
+  margin-left: 20px;
+  color: #8948c5;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+label input {
+  display: none;
+}
+
+.footer {
+  width: 1500px;
+  margin: 0 auto;
+}
+
+footer h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+footer a {
+  width: 100px;
+}
+
+.social-links {
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 80px;
 }

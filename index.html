@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Adam Zakob - UX Designer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -206,27 +206,42 @@
       </div>
     </section>
     <section class="section section-blog" id="blog">
-      <div class="wrapper">
+      <div class="wrapper grid">
         <header class="section-header">
           <h2>Blog</h2>
           <hr />
-          <h3>Get News Feeds</h3>
-          <a href="#" class="latest-blog">
-            <img src="https://picsum.photos/seed/picsum/400/300" alt="" />
-            <span>20 June/2020</span>
-            <p>Technology is evolving rapidly. New devices and applications.</p>
-          </a>
+          <h3>
+            Get News <br />
+            Feeds
+          </h3>
         </header>
-        <a href="#" class="blog">
-          <img src="https://picsum.photos/seed/picsum/300/400" alt="" />
+        <article class="latest-blog">
+          <a href="#">
+            <img src="https://picsum.photos/seed/picsum/400/300" alt="" />
+          </a>
           <span>20 June/2020</span>
-          <p>New devices and applications come to the market.</p>
-        </a>
-        <a href="#" class="blog">
-          <img src="https://picsum.photos/seed/picsum/300/400" alt="" />
-          <span>20 June/2020</span>
-          <p>Every day providing solutions to problems.</p>
-        </a>
+          <a href="#">
+            Technology is evolving rapidly. New devices and applications.
+          </a>
+        </article>
+        <article class="blog">
+          <a href="#">
+            <img src="https://picsum.photos/seed/picsum/300/400" alt="" />
+          </a>
+          <div>
+            <span>20 June/2020</span>
+            <a href="#">New devices and applications come to the market.</a>
+          </div>
+        </article>
+        <article class="blog">
+          <a href="#">
+            <img src="https://picsum.photos/seed/picsum/300/400" alt="" />
+          </a>
+          <div>
+            <span>20 June/2020</span>
+            <a href="#">Every day providing solutions to problems.</a>
+          </div>
+        </article>
       </div>
     </section>
     <section class="section section-contact">
@@ -234,14 +249,16 @@
         <header class="section-header">
           <h2>Contact Me</h2>
           <hr />
-          <h3>
-            Let me know if you want to talk<br />
-            about a potential collaboration.<br />
-            I'm available for freelance work.
-          </h3>
-          <a href="mailto:infoname@mail.com">infoname@mail.com</a>
+          <div class="flex-row">
+            <h3>
+              Let me know if you want to talk<br />
+              about a potential collaboration.<br />
+              I'm available for freelance work.
+            </h3>
+            <a href="mailto:infoname@mail.com">infoname@mail.com</a>
+          </div>
         </header>
-        <form action="" class="contact">
+        <form action="#" class="contact flex-col">
           <input
             type="text"
             name="name"
@@ -263,28 +280,38 @@
             placeholder="Tell me about your project"
             required
           />
-          <input type="submit" value="Get a Quote" />
-          <label for="file">
-            <i class="las la-paperclip"></i>
-            <input type="file" id="file" multiple />
-          </label>
-          <a href="#">
-            <i class="las la-arrow-right"></i>
-          </a>
+          <div class="flex-row">
+            <input type="submit" value="Get a Quote" />
+            <label for="file" class="file-upload">
+              <i class="las la-paperclip"></i>
+              <input type="file" id="file" multiple />
+            </label>
+            <a href="#">
+              <i class="las la-arrow-right"></i>
+            </a>
+          </div>
         </form>
       </div>
     </section>
     <footer class="footer">
-      <h3></h3>
-      <a href="#" class="social-link">
-        <img src="./images/dribbble-icon.png" alt="" />
-      </a>
-      <a href="#" class="social-link">
-        <img src="./images/instagram-icon.png" alt="" />
-      </a>
-      <a href="#" class="social-link">
-        <img src="./images/linkedin-icon.png" alt="" />
-      </a>
+      <h3>Let's be Friends</h3>
+      <ul class="social-links flex-row">
+        <li class="social-link">
+          <a href="#">
+            <img src="./images/dribbble-icon.png" alt="" />
+          </a>
+        </li>
+        <li class="social-link">
+          <a href="#">
+            <img src="./images/instagram-icon.png" alt="" />
+          </a>
+        </li>
+        <li class="social-link">
+          <a href="#">
+            <img src="./images/linkedin-icon.png" alt="" />
+          </a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
