@@ -170,7 +170,8 @@ header input[type='file'] {
   color: #555;
 }
 
-.section-portfolio a {
+.section-portfolio a:link,
+.section-portfolio a:visited {
   text-decoration: underline;
   font-size: 32px;
   margin-left: auto;
@@ -270,9 +271,14 @@ header input[type='file'] {
   box-shadow: 0 0 100px 100px #d8f3c9;
 }
 
+.section-testimonials {
+  position: relative;
+}
+
 .testimonials {
   font-size: 20px;
   margin-top: -20px;
+  position: relative;
 }
 
 .testimonial-name {
@@ -473,4 +479,42 @@ footer a {
   justify-content: center;
   gap: 50px;
   margin-bottom: 80px;
+}
+
+.section-portfolio > .wrapper {
+  position: relative;
+}
+
+.section-portfolio > .wrapper::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0%;
+  box-shadow: 0 0 500px 500px #faeafd;
+  z-index: -1;
+}
+
+.section-testimonials .section-header {
+  position: relative;
+}
+
+.section-testimonials .section-header::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0%;
+  box-shadow: 0 0 500px 100px #f3fcf3;
+  z-index: -1;
+}
+
+.testimonials::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0%;
+  box-shadow: 0 0 500px 500px #f5f1fd;
+  z-index: -1;
 }
